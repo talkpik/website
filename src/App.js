@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Navbar from './Navbar';
+import Header from './Header';
+import UpcomingEvents from './UpcomingEvents';
+import Services from './Services';
+import Seeker from './Seeker';
+import Speaker from './Speaker';
+import Events from './Events';
+import Testimonials from './Testimonials';
+import Team from './Team';
+import Contact from './Contact';
+import Footer from './Footer';
 
-function App() {
+
+class App extends Component {
+render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	  <div className="App">
+	  <Navbar/>
+	  <Header/>
+	  <div style={{display:"none"}}>
+	  <UpcomingEvents/>
+	  </div>
+	  <Services/>
+	  <Seeker/>
+	  <Speaker/>
+	  <Events/>
+	  <div style={{display:"none"}}>
+	  <Testimonials/>
+	  </div>
+	  <Team/>
+	  <Contact/>
+	  <Footer/>
+  </div>
+		  );
 }
-
+}
 export default App;
