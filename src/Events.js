@@ -30,7 +30,7 @@ render(){
                                     <i className="fas fa-check"></i><div className="media-body">Ex-Amazon employee</div>
                                 </li>
                                 <li className="media">
-                                    <i className="fas fa-check"></i><div className="media-body">Sun Certified Java Developer</div>
+                                    <i className="fas fa-check"></i><div className="media-body">Certified Java Developer</div>
                                 </li>
                             </ul>
                             <div className="btn-solid-reg popup-with-move-anim">
